@@ -5,4 +5,5 @@ Feature: Login
     And I input "artem.vepryk@selectoglobal.com" into the "email_address_input" field
     And I input "007007bo" into the "password_input" field
     And I click "sign_in_button" 
-    Then the url is "http://dvl-test-frontend.s3-website-us-east-1.amazonaws.com/accounting/reports/company"
+    Then I see I am logged in
+    And the url is "http://dvl-test-frontend.s3-website-us-east-1.amazonaws.com/accounting/reports/company"
